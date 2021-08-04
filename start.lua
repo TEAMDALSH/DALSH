@@ -67,28 +67,28 @@ end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"))   
 --- local t = json:decode(https.request('https://black-source.tk/BlackTeAM/index.php?n=BK&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
-print("::DLASH::")
-local RunBot = io.open("DLASH", 'w')
+print("::DALSH::")
+local RunBot = io.open("DALSH", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/DLASH
+cd $HOME/DALSH
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr DLASH.lua
-wget "https://raw.githubusercontent.com/TEAMDLASH/DLASH/master/DLASH.lua"
+rm -fr DALSH.lua
+wget "https://raw.githubusercontent.com/TEAMDALSH/DALSH/master/DALSH.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./DLASH.lua -p PROFILE --bot=$token
+./tg -s ./DALSH.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/DLASH
+cd $HOME/DALSH
 while(true) do
 rm -fr ../.telegram-cli
-screen -S DLASH -X kill
-screen -S DLASH ./DLASH
+screen -S DALSH -X kill
+screen -S DALSH ./DALSH
 done
 ]])
 RunTs:close()
