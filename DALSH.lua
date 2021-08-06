@@ -423,7 +423,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس كراند الرسمي",
+performer_ = "سورس دالش الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -6266,7 +6266,7 @@ database:set(bot_id.."DALSH:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, " ゠⁞ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."DALSH:Name:Bot") or "كراند") then
+if text == (database:get(bot_id.."DALSH:Name:Bot") or "دالش") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6276,7 +6276,7 @@ send(msg.chat_id_, msg.id_,' ゠⁞ عـليك الاشـتࢪاك في قنـا
 end
 return false
 end
-Namebot = (database:get(bot_id.."DALSH:Name:Bot") or "كراند")
+Namebot = (database:get(bot_id.."DALSH:Name:Bot") or "دالش")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6295,7 +6295,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."DALSH:Name:Bot") or "كراند")
+Namebot = (database:get(bot_id.."DALSH:Name:Bot") or "دالش")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
@@ -8051,7 +8051,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ゠⁞ اهلا بك في متجر ملفات كراند\n ゠⁞ يوجد في المتجر ملف الردود\n ゠⁞ يتم ادراج الملفات في التحديثات القادمه \n \n"
+local TextS = "\n ゠⁞ اهلا بك في متجر ملفات دالش\n ゠⁞ يوجد في المتجر ملف الردود\n ゠⁞ يتم ادراج الملفات في التحديثات القادمه \n \n"
 local TextE = "\n \n ゠⁞ تدل علامة (✔) الملف مفعل\n".." ゠⁞ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -8177,7 +8177,7 @@ Text = [[
      
  [• 𝚅𝚎𝙲𝚝𝚘 Developer .](http://t.me/AUJLJI) 
 
- [• 𝚂𝚞𝙿𝚎𝚛 𝚅𝚎𝙲𝚝𝚘 .](https://t.me/joinchat/11oSzP9E5RFjNjcx)
+ [• 𝚂𝚞𝙿𝚎𝚛 𝚅𝚎𝙲𝚝𝚘 .](https://t.me/joinchat/57kgEPEjw7AyMTky)
 
 
      
@@ -9413,7 +9413,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."DALSH:Name:Bot") or "كراند")
+local Name_Bot = (database:get(bot_id.."DALSH:Name:Bot") or "دالش")
 if not database:get(bot_id.."DALSH:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
